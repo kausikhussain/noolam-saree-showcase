@@ -36,10 +36,13 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <h5>Care</h5>
-          <a href="#footer">Silk care guide</a>
-          <a href="#footer">Zari purity promise</a>
-          <a href="#footer">Shipping &amp; returns</a>
+          <h5>Care &amp; Heritage</h5>
+          <a href="/policies/authenticity">Silk Mark &amp; Zari Purity</a>
+          <a href="/policies/shipping">Insured Air Shipping</a>
+          <a href="/policies/returns">7-Day Silk Exchange</a>
+          <a href="/policies/privacy">Privacy Policy</a>
+          <a href="/policies/terms">Terms of Service</a>
+          <a href="/policies/contact">Grievance &amp; Concierge</a>
         </div>
         <form
           className="footer-news"
