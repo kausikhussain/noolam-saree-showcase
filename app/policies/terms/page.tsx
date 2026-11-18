@@ -5,8 +5,8 @@ import Ticker from "@/components/Ticker";
 import { BagProvider } from "@/components/store";
 
 export const metadata = {
-  title: "Terms of Service · NOOLAM",
-  description: "Official terms and conditions governing purchases and usage of the NOOLAM digital boutique.",
+  title: "Terms of Service · SUTRÉA",
+  description: "Official terms and conditions governing purchases and usage of the SUTRÉA digital boutique.",
 };
 
 export default function TermsPage() {
@@ -22,7 +22,7 @@ export default function TermsPage() {
           <section>
             <h2>1. Agreement to Terms</h2>
             <p>
-              By accessing NOOLAM (the "Platform"), booking a video consultation, or purchasing handwoven garments, you agree to be bound by these Terms of Service and applicable Indian laws.
+              By accessing SUTRÉA (the "Platform"), booking a video consultation, or purchasing handwoven garments, you agree to be bound by these Terms of Service and applicable Indian laws.
             </p>
           </section>
 
@@ -43,7 +43,7 @@ export default function TermsPage() {
           <section>
             <h2>4. Governing Law & Jurisdiction</h2>
             <p>
-              These terms are governed by the laws of India. Any disputes arising in connection with NOOLAM transactions shall be subject to the exclusive jurisdiction of the competent courts in Kanchipuram / Chennai, Tamil Nadu.
+              These terms are governed by the laws of India. Any disputes arising in connection with SUTRÉA transactions shall be subject to the exclusive jurisdiction of the competent courts in Kanchipuram / Chennai, Tamil Nadu.
             </p>
           </section>
         </div>

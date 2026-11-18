@@ -1,4 +1,4 @@
-# NOOLAM · Master Implementation Plan (Phases 1–20)
+# SUTRÉA · Master Implementation Plan (Phases 1–20)
 **Document Version:** 1.0.0  
 **Target Architecture:** Next.js 15 + Shopify Headless (Storefront GraphQL API) + Three.js PBR Cloth Engine  
 **Deployment Target:** Vercel Pro (Edge Network) + GitHub Continuous Integration  
@@ -55,7 +55,7 @@ flowchart TD
 ## 2. Phase-by-Phase Execution Roadmap
 
 ### Phase 1: Brand Identity & Creative Production
-- **Objective:** Finalize NOOLAM's luxury sensory identity and implement the asset ingestion pipeline.
+- **Objective:** Finalize SUTRÉA's luxury sensory identity and implement the asset ingestion pipeline.
 - **Deliverables:**
   - Create `docs/ASSET_MANIFEST.md` cataloging all 68 visual assets with dimensions, aspect ratios, generation prompts, and storage paths.
   - Implement image ingestion fallback logic ensuring zero layout shifts.
@@ -183,7 +183,7 @@ flowchart TD
 ### Phase 18: GitHub Version Control & Milestone Commits
 - **Objective:** Professional Git history reflecting genuine architectural milestones.
 - **Deliverables:**
-  - Synchronized, clean milestone commits pushed to `kausikhussain/noolam-saree-showcase`.
+  - Synchronized, clean milestone commits pushed to `kausikhussain/sutrea-luxury-commerce`.
   - Comprehensive documentation suite: `ARCHITECTURE.md`, `SETUP.md`, `API_INTEGRATIONS.md`, `SECURITY.md`, `DEPLOYMENT.md`, `CHANGELOG.md`.
 
 ### Phase 19: Owner Action & Governance Tracking

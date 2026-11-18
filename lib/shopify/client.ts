@@ -81,7 +81,7 @@ function getFallbackProducts(): ShopifyProduct[] {
     description: `Authentic Kanchipuram silk saree with rich zari border and traditional temple motifs. Draped in heritage palette: ${card.colors.join(", ")}.`,
     availableForSale: true,
     productType: "Silk Saree",
-    vendor: "NOOLAM",
+    vendor: "SUTRÉA",
     tags: ["kanchipuram", "pure-silk", card.pattern],
     priceRange: {
       minVariantPrice: { amount: card.price.toString(), currencyCode: "INR" },

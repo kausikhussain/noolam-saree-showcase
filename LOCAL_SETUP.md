@@ -1,6 +1,6 @@
-# NOOLAM · Local Developer Setup Guide (Windows)
+# SUTRÉA · Local Developer Setup Guide (Windows)
 
-This document provides step-by-step instructions for running, testing, and developing the **NOOLAM** Kanchipuram Silk Flagship application on Windows using PowerShell.
+This document provides step-by-step instructions for running, testing, and developing the **SUTRÉA** Heritage Silk Flagship application on Windows using PowerShell.
 
 ---
 
@@ -27,7 +27,7 @@ We provide pre-configured PowerShell automation scripts in the `scripts/` direct
 
 ```powershell
 # 1. Navigate to project root
-cd E:\noolam-saree\noolam-saree-showcase
+cd sutrea-luxury-commerce
 
 # 2. Run automated setup (creates .env.local and installs packages)
 .\scripts\setup.ps1
@@ -46,8 +46,8 @@ If you prefer to configure manually:
 
 1. **Clone the repository:**
    ```powershell
-   git clone https://github.com/kausikhussain/noolam-saree-showcase.git
-   cd noolam-saree-showcase
+   git clone https://github.com/kausikhussain/sutrea-luxury-commerce.git
+   cd sutrea-luxury-commerce
    ```
 
 2. **Copy the Environment Template:**

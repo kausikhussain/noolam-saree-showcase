@@ -78,7 +78,7 @@ function Viewer({ start, onClose }: { start: number; onClose: () => void }) {
             <Lotus size={16} />
           </span>
           <div>
-            <strong>noolam</strong>
+            <strong>sutrea</strong>
             <small>{r.place}</small>
           </div>
           <button onClick={() => setMuted(!muted)} aria-label="Toggle sound">

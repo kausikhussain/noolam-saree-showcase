@@ -1,12 +1,12 @@
-<#
+﻿<#
 .SYNOPSIS
-    Automated environment setup script for NOOLAM Kanchipuram Silk Flagship.
+    Automated environment setup script for SUTRÉA Heritage Silk Flagship.
 .DESCRIPTION
     Verifies Node.js & npm runtimes, creates .env.local if missing, and installs all dependencies.
 #>
 
 Write-Host "==========================================================" -ForegroundColor Cyan
-Write-Host "  NOOLAM · Kanchipuram Silk Flagship Setup (Windows)    " -ForegroundColor Gold
+Write-Host "  SUTRÉA · Heritage Silk Flagship Setup (Windows)       " -ForegroundColor Gold
 Write-Host "==========================================================" -ForegroundColor Cyan
 
 # 1. Verify Node.js version

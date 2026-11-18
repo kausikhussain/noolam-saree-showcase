@@ -5,7 +5,7 @@ import Ticker from "@/components/Ticker";
 import { BagProvider } from "@/components/store";
 
 export const metadata = {
-  title: "Shipping & Fulfilment Policy · NOOLAM",
+  title: "Shipping & Fulfilment Policy · SUTRÉA",
   description: "Domestic and international white-glove handloom silk shipping policy, transit timelines, and delivery terms.",
 };
 
@@ -22,7 +22,7 @@ export default function ShippingPolicyPage() {
           <section>
             <h2>1. Domestic Indian Shipping</h2>
             <p>
-              Every NOOLAM saree is individually inspected, steam-pressed, and packaged inside a rigid, moisture-resistant heirloom gift box.
+              Every SUTRÉA saree is individually inspected, steam-pressed, and packaged inside a rigid, moisture-resistant heirloom gift box.
             </p>
             <ul>
               <li><strong>Complimentary Insured Shipping:</strong> All domestic orders across India are shipped via priority air courier (Blue Dart / Delhivery / Bluedart Air) free of charge.</li>

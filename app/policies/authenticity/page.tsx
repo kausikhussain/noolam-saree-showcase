@@ -5,8 +5,8 @@ import Ticker from "@/components/Ticker";
 import { BagProvider } from "@/components/store";
 
 export const metadata = {
-  title: "Product Authenticity Guarantee · NOOLAM",
-  description: "Learn about the Silk Mark certification, pure gold zari composition, and master pit-loom heritage of NOOLAM Kanchipuram silks.",
+  title: "Product Authenticity Guarantee · SUTRÉA",
+  description: "Learn about the Silk Mark certification, pure gold zari composition, and master pit-loom heritage of SUTRÉA heritage silks.",
 };
 
 export default function AuthenticityPolicyPage() {
@@ -22,7 +22,7 @@ export default function AuthenticityPolicyPage() {
           <section>
             <h2>1. 100% Pure Mulberry Silk Mark Certified</h2>
             <p>
-              Every NOOLAM saree is crafted strictly from high-twist, 3-ply natural mulberry silk sourced directly from ethical South Indian sericulture cooperatives. Each saree ships with an individual **Silk Mark India** certification tag featuring an authorized QR verification seal issued by the Silk Mark Organisation of India (SMOI).
+              Every SUTRÉA saree is crafted strictly from high-twist, 3-ply natural mulberry silk sourced directly from ethical South Indian sericulture cooperatives. Each saree ships with an individual **Silk Mark India** certification tag featuring an authorized QR verification seal issued by the Silk Mark Organisation of India (SMOI).
             </p>
           </section>
 

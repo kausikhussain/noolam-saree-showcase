@@ -65,7 +65,7 @@ export default function CartDrawer() {
         {/* Value Prop Banner */}
         <div className="drawer-banner">
           <Sparkles size={15} />
-          <span>Silk Mark Certified Pure Kanchipuram Handloom · Free Insured Air Shipping</span>
+          <span>Silk Mark Certified Pure Heritage Handloom · Free Insured Air Shipping</span>
         </div>
 
         {/* Content Body */}
@@ -73,7 +73,7 @@ export default function CartDrawer() {
           <div className="drawer-empty">
             <div className="empty-ornament">⚜</div>
             <h4>Your silk bag is empty</h4>
-            <p>Heirloom Kanchipuram silks handwoven on heritage pit looms await you.</p>
+            <p>Heritage silks handwoven on heirloom pit looms await you.</p>
             <a href="#rack" onClick={closeCart} className="btn btn-maroon">
               <span>Explore The Rail</span>
               <span className="btn-dot"><ArrowR size={15} /></span>
@@ -163,7 +163,7 @@ export default function CartDrawer() {
                     type="text"
                     value={inputCode}
                     onChange={(e) => setInputCode(e.target.value)}
-                    placeholder="Enter Coupon (e.g. NOOLAM10)"
+                    placeholder="Enter Coupon (e.g. SUTREA10)"
                     className="promo-input"
                   />
                   <button type="submit" className="promo-submit">Apply</button>
@@ -172,8 +172,8 @@ export default function CartDrawer() {
               {promoError && <p className="promo-error">{promoError}</p>}
               {!promoCode && (
                 <div className="promo-suggestions">
-                  <button type="button" onClick={() => applyPromo("NOOLAM10")} className="promo-chip">
-                    Use <strong>NOOLAM10</strong> for 10% off
+                  <button type="button" onClick={() => applyPromo("SUTREA10")} className="promo-chip">
+                    Use <strong>SUTREA10</strong> for 10% off
                   </button>
                 </div>
               )}

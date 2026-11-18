@@ -1,7 +1,7 @@
 # Prompts
 
 ## 1. Hero
-Build a hero for NOOLAM, a Kanchipuram silk saree brand with a divine heritage-showroom feel.
+Build a hero for SUTRÉA, a heritage silk saree brand with a luxury editorial showroom feel.
 Use a full-bleed image of a grand saree showroom with mannequins and silk-stacked shelves.
 Add a glass pill navbar with logo, section links, wishlist, bag and a "Visit the Store" button.
 Headline "Woven for the Divine." in large bold white type with a short line about temple looms.
@@ -9,7 +9,7 @@ Two buttons: "Try the Look" (maroon) and "Browse the Rack" (white), each with an
 End with a maroon ticker strip scrolling gold section names like TRY THE LOOK, PURE ZARI, BRIDAL.
 
 ## 2. Six Moods
-Create a "The NOOLAM Archive" section on a pure white background.
+Create a "The SUTRÉA Archive" section on a pure white background.
 Headline "Six Moods. Timeless Drapes" with the second half in a maroon-to-gold gradient.
 Show six saree photos framed inside golden temple-arch (gopuram) shaped windows with a finial on top.
 Label each mood below in spaced capitals: Wedding Edit, Kanchipuram Icons, Banarasi Heirlooms, and more.

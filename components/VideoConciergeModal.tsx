@@ -25,14 +25,14 @@ export default function VideoConciergeModal() {
     setConfirmed(true);
   };
 
-  const whatsappMsg = `Hello NOOLAM Concierge! I have requested a 1-on-1 Live Video Saree Consultation for ${name} on ${date} (${time}) focusing on ${collection}.`;
+  const whatsappMsg = `Hello SUTRÉA Concierge! I have requested a 1-on-1 Live Video Saree Consultation for ${name} on ${date} (${time}) focusing on ${collection}.`;
 
   return (
     <div className="modal-overlay" onClick={closeConcierge}>
       <div className="modal-container concierge-modal" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <div className="modal-title-group">
-            <span className="eyebrow">NOOLAM · PRIVATE CLIENT CONCIERGE</span>
+            <span className="eyebrow">SUTRÉA · PRIVATE CLIENT CONCIERGE</span>
             <h3 className="modal-title">Live 1-on-1 Video Saree Consultation</h3>
           </div>
           <button className="modal-close" onClick={closeConcierge} aria-label="Close modal">

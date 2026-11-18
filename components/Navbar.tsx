@@ -4,21 +4,21 @@ import { useBag } from "./store";
 import { ArrowR, Bag, Heart, Lotus } from "./Icons";
 
 const links = [
-  ["home", "Home"],
-  ["look", "Try the Look"],
-  ["silk", "Pick a Silk"],
-  ["rack", "The Rack"],
-  ["muse", "The Muse"],
-  ["bridal", "Bridal"],
-  ["weave", "The Weave"],
+  ["/", "Home"],
+  ["/shop", "Shop"],
+  ["/#look", "Try the Look"],
+  ["/#silk", "Pick a Silk"],
+  ["/#rack", "The Rack"],
+  ["/craftsmanship", "Craft"],
+  ["/about", "Our Story"],
 ] as const;
 
 export function Logo({ light = true }: { light?: boolean }) {
   return (
-    <a href="#home" className={`logo ${light ? "light" : ""}`} aria-label="NOOLAM home">
+    <a href="/" className={`logo ${light ? "light" : ""}`} aria-label="SUTRÉA home">
       <Lotus size={24} />
-      <span className="logo-word">NOOLAM</span>
-      <span className="logo-sub">KANCHIPURAM SILK</span>
+      <span className="logo-word">SUTRÉA</span>
+      <span className="logo-sub">HERITAGE SILK</span>
     </a>
   );
 }
@@ -32,10 +32,12 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 40);
-      let cur = "home";
-      for (const [id] of links) {
+      let cur = "/";
+      for (const [href] of links) {
+        const id = href.replace(/^(\/|#|\/#)/, "");
+        if (!id) continue;
         const el = document.getElementById(id);
-        if (el && el.getBoundingClientRect().top < window.innerHeight * 0.4) cur = id;
+        if (el && el.getBoundingClientRect().top < window.innerHeight * 0.4) cur = href;
       }
       setActive(cur);
     };
@@ -55,8 +57,8 @@ export default function Navbar() {
     <header className={`nav ${scrolled ? "scrolled" : ""}`}>
       <Logo />
       <nav className="nav-links">
-        {links.map(([id, label]) => (
-          <a key={id} href={`#${id}`} className={active === id ? "active" : ""}>
+        {links.map(([href, label]) => (
+          <a key={href} href={href} className={active === href ? "active" : ""}>
             {label}
           </a>
         ))}
@@ -80,7 +82,7 @@ export default function Navbar() {
           <Bag size={16} />
           {count > 0 && <i className="badge">{count}</i>}
         </button>
-        <a className="btn btn-maroon nav-cta" href="#rack">
+        <a className="btn btn-maroon nav-cta" href="/shop">
           Visit the Store
           <span className="btn-dot">
             <ArrowR size={14} />

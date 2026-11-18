@@ -1,4 +1,4 @@
-# NOOLAM · API Integrations Guide
+# SUTRÉA · API Integrations Guide
 
 ---
 
@@ -42,7 +42,7 @@ const generatedHash = crypto
 
 ## 3. WhatsApp Cloud API / Concierge Deep-Link
 
-NOOLAM provides instant patron communication using standard RFC 3986 pre-formatted URI triggers:
+SUTRÉA provides instant patron communication using standard RFC 3986 pre-formatted URI triggers:
 ```text
 https://wa.me/{phone_number}?text={encoded_message}
 ```

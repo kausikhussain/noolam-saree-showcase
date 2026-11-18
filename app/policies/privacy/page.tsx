@@ -5,8 +5,8 @@ import Ticker from "@/components/Ticker";
 import { BagProvider } from "@/components/store";
 
 export const metadata = {
-  title: "Privacy Policy · NOOLAM",
-  description: "Official customer privacy policy and data protection commitments for NOOLAM Kanchipuram Silk.",
+  title: "Privacy Policy · SUTRÉA",
+  description: "Official customer privacy policy and data protection commitments for SUTRÉA Heritage Silk.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2>1. Our Commitment to Discretion</h2>
             <p>
-              NOOLAM respects the privacy of every patron. This Privacy Policy outlines how your personal data is collected, used, and safeguarded when visiting our digital showroom and purchasing authentic handloom silks.
+              SUTRÉA respects the privacy of every patron. This Privacy Policy outlines how your personal data is collected, used, and safeguarded when visiting our digital showroom and purchasing authentic handloom silks.
             </p>
           </section>
 
@@ -41,7 +41,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2>3. Payment Security & Zero Card Storage</h2>
             <p>
-              All online payments are processed through PCI-DSS Level 1 certified gateways (Shopify Payments / Razorpay / Cashfree / Stripe). NOOLAM never views, stores, or logs your credit/debit card numbers or UPI PINs.
+              All online payments are processed through PCI-DSS Level 1 certified gateways (Shopify Payments / Razorpay / Cashfree / Stripe). SUTRÉA never views, stores, or logs your credit/debit card numbers or UPI PINs.
             </p>
           </section>
 
@@ -57,7 +57,7 @@ export default function PrivacyPolicyPage() {
             <p>
               For data access requests or privacy inquiries, contact our designated privacy officer at:
               <br />
-              <strong>Email:</strong> privacy@noolam.com
+              <strong>Email:</strong> privacy@sutrea.com
             </p>
           </section>
         </div>

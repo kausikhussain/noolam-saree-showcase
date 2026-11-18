@@ -125,7 +125,7 @@ export default function TryTheLook() {
                   />
                 </div>
                 <div className="li-body">
-                  <small>NOOLAM · {it.type}</small>
+                  <small>SUTRÉA · {it.type}</small>
                   <strong>{it.name}</strong>
                   <span>{inr(it.price)}</span>
                 </div>

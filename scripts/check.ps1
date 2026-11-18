@@ -1,10 +1,10 @@
-<#
+﻿<#
 .SYNOPSIS
-    Automated health and build validation script for NOOLAM Flagship.
+    Automated health and build validation script for SUTRÉA Flagship.
 #>
 
 Write-Host "==========================================================" -ForegroundColor Cyan
-Write-Host "  NOOLAM · Pre-Commit & Production Build Verification    " -ForegroundColor Gold
+Write-Host "  SUTRÉA · Pre-Commit & Production Build Verification    " -ForegroundColor Gold
 Write-Host "==========================================================" -ForegroundColor Cyan
 
 # 1. Type Check

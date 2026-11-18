@@ -5,8 +5,8 @@ import Ticker from "@/components/Ticker";
 import { BagProvider } from "@/components/store";
 
 export const metadata = {
-  title: "Return & Exchange Policy · NOOLAM",
-  description: "Official 7-day heirloom handloom silk exchange policy and returns terms for NOOLAM.",
+  title: "Return & Exchange Policy · SUTRÉA",
+  description: "Official 7-day heirloom handloom silk exchange policy and returns terms for SUTRÉA.",
 };
 
 export default function ReturnsPolicyPage() {

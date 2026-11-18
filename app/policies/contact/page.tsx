@@ -5,8 +5,8 @@ import Ticker from "@/components/Ticker";
 import { BagProvider } from "@/components/store";
 
 export const metadata = {
-  title: "Contact & Concierge · NOOLAM",
-  description: "Reach the NOOLAM master loom concierge, schedule private showroom visits, or connect with our customer grievance officer.",
+  title: "Contact & Concierge · SUTRÉA",
+  description: "Reach the SUTRÉA master loom concierge, schedule private showroom visits, or connect with our customer grievance officer.",
 };
 
 export default function ContactPage() {
@@ -26,15 +26,15 @@ export default function ContactPage() {
             </p>
             <ul>
               <li><strong>WhatsApp Concierge:</strong> +91 98400 12345 (Daily 10:00 AM – 8:00 PM IST)</li>
-              <li><strong>Client Relations Email:</strong> concierge@noolam.com</li>
-              <li><strong>Orders & Tracking:</strong> orders@noolam.com</li>
+              <li><strong>Client Relations Email:</strong> concierge@sutrea.com</li>
+              <li><strong>Orders & Tracking:</strong> orders@sutrea.com</li>
             </ul>
           </section>
 
           <section>
             <h2>2. Flagship Heritage Showroom</h2>
             <p>
-              <strong>NOOLAM Silks Flagship</strong><br />
+              <strong>SUTRÉA Silks Flagship</strong><br />
               42, Gandhi Road, Near Ekambareswarar Temple Outer Gate,<br />
               Kanchipuram, Tamil Nadu – 631502, India.<br />
               <strong>Hours:</strong> Tuesday to Sunday: 9:30 AM – 8:30 PM (Mondays by appointment)
@@ -49,8 +49,8 @@ export default function ContactPage() {
             <p>
               <strong>Officer Name:</strong> K. S. Sundaram<br />
               <strong>Designation:</strong> Head of Client Relations & Compliance<br />
-              <strong>Direct Email:</strong> grievance@noolam.com<br />
-              <strong>Official Address:</strong> NOOLAM Flagship, 42 Gandhi Road, Kanchipuram – 631502
+              <strong>Direct Email:</strong> grievance@sutrea.com<br />
+              <strong>Official Address:</strong> SUTRÉA Flagship, 42 Gandhi Road, Kanchipuram – 631502
             </p>
           </section>
         </div>

@@ -1,10 +1,11 @@
-# NOOLAM · Kanchipuram Silk Saree Flagship
+# SUTRÉA · Heritage Silk Saree Flagship
+## Woven to Be Remembered.
 
 <p align="center">
-  <img src="screenshots/01-hero.png" width="100%" alt="NOOLAM Hero Showroom">
+  <img src="screenshots/01-hero.png" width="100%" alt="SUTRÉA Hero Showroom">
 </p>
 
-> **NOOLAM** is a complete, live-ready digital luxury flagship for heritage Kanchipuram silk sarees. Engineered with **Next.js 15 (App Router)**, **React 19**, **Shopify Headless Commerce (Storefront GraphQL API 2026-10)**, and **Three.js** real-time cloth simulation, it delivers physics-based silk drapes, an editorial luxury shopping cart, multi-currency conversion, domestic pincode logistics, and 1-on-1 private video concierge booking.
+> **SUTRÉA** is a complete, production-grade digital luxury flagship for heritage handwoven silk sarees and bridal heirlooms. Engineered with **Next.js 15 (App Router)**, **React 19**, **Shopify Headless Commerce (Storefront GraphQL API 2026-10)**, and **Three.js** real-time cloth simulation, it delivers physics-based silk drapes, an editorial luxury shopping cart, multi-currency conversion, domestic pincode logistics, and 1-on-1 private video concierge booking.
 
 ---
 
@@ -13,11 +14,17 @@
 - **3D Silk Cloth Physics Engine**: Real-time Verlet particle simulation for silk curtain parting and hanging garment sway with procedural PBR metallic zari shaders.
 - **Shopify Headless Commerce Layer**: Strongly-typed Storefront GraphQL client (`lib/shopify/client.ts`) with cart lines mutations, discount engine, and resilient local fallback.
 - **Luxury E-Commerce Suite**:
-  - Slide-over **Shopping Bag Drawer** with real-time promo validation (`NOOLAM10`, `UTSAV`)
+  - Slide-over **Shopping Bag Drawer** with real-time promo validation (`SUTREA10`, `UTSAV`)
   - **Multi-Currency Presentation**: Formatted in Indian numbering (`₹1,25,000`) and international rates (USD, GBP, AED)
   - **Domestic Pincode Serviceability**: Instant delivery timeline validation for 19,000+ Indian postal circles
   - **3-Step Private Checkout**: Comprehensive address collection, payment method selector (UPI, Cards, COD), and automated order receipt generator
   - **Saved Heirlooms Wishlist**: Persistent client-side favorites with one-click move to cart
+- **Multi-Page Luxury Boutique Routing**:
+  - `/shop` — Dedicated catalogue with interactive filtering by category, search, and sorting
+  - `/about` — "Our Story" brand heritage and ethical weaver custodianship
+  - `/craftsmanship` — Anatomy of pit-loom mechanics, Korvai interlocking, and pure 24K gold zari metallurgy
+  - `/care` — Heirloom preservation rituals, crease rotation, and professional restoration
+  - `/faq` — Comprehensive customer questions, Silk Mark verification, and bespoke tailoring
 - **Conversion & Concierge Features**:
   - **Silk Finder Discovery Quiz**: Interactive 4-step wizard recommending weaves based on occasion, palette, and budget
   - **1-on-1 Video Consultation**: Booking system connecting patrons directly with master drapers via WhatsApp
@@ -34,8 +41,8 @@ We provide native automation scripts for frictionless Windows development:
 
 ```powershell
 # 1. Clone repository
-git clone https://github.com/kausikhussain/noolam-saree-showcase.git
-cd noolam-saree-showcase
+git clone https://github.com/kausikhussain/sutrea-luxury-commerce.git
+cd sutrea-luxury-commerce
 
 # 2. Automated environment setup & dependency install
 .\scripts\setup.ps1
@@ -89,12 +96,19 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
   <img src="screenshots/09-muse-reels.png" width="49%">
 </p>
 <p align="center">
-  <img src="screenshots/10-bridal.png" width="49%">
+  <img src="screenshots/10-bridal.png" width="100%">
 </p>
 
 ---
 
-## ✦ Heritage & Authenticity
+## ✦ Technical Specifications
+
+- **Framework:** Next.js 15.5.29 (App Router)
+- **UI Runtime:** React 19.1.0
+- **Language:** TypeScript 5.7.2 (strict mode)
+- **3D Engine:** Three.js 0.170.0 (Verlet solver + WebGL PBR shaders)
+- **Smooth Scroll:** Lenis 1.3.26
+- **Typography:** Playfair Display, Cormorant Garamond, Inter
+- **Commerce Backend:** Shopify Storefront GraphQL API (2026-10) with local resilient fallback
 - **Loom Origin:** Kanchipuram, Tamil Nadu, India
-- **Silk Grade:** 100% Pure Natural Mulberry Silk (Silk Mark Certified)
-- **Zari Standard:** Pure Silver-core with 24k Gold Electroplate (Heirloom Grade)
+- **Base Currency:** INR (₹) with dynamic international conversion

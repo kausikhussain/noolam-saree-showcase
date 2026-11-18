@@ -1,6 +1,6 @@
-# Changelog · NOOLAM Kanchipuram Silk Platform
+# Changelog · SUTRÉA Heritage Silk Platform
 
-All notable changes to the NOOLAM platform will be documented in this file.
+All notable changes to the SUTRÉA platform will be documented in this file.
 
 ---
 

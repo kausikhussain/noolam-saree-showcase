@@ -1,10 +1,10 @@
-<#
+﻿<#
 .SYNOPSIS
-    Frictionless local launcher for NOOLAM Next.js development server on Windows.
+    Frictionless local launcher for SUTRÉA Next.js development server on Windows.
 #>
 
 Write-Host "==========================================================" -ForegroundColor Cyan
-Write-Host "  Starting NOOLAM Flagship Development Server...         " -ForegroundColor Gold
+Write-Host "  Starting SUTRÉA Flagship Development Server...         " -ForegroundColor Gold
 Write-Host "==========================================================" -ForegroundColor Cyan
 
 # Check if port 3000 is occupied

@@ -50,7 +50,7 @@ export default function SilkFinderModal({ isOpen, onClose }: { isOpen: boolean; 
       <div className="modal-container quiz-modal" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <div className="modal-title-group">
-            <span className="eyebrow">NOOLAM · BESPOKE SILK FINDER</span>
+            <span className="eyebrow">SUTRÉA · BESPOKE SILK FINDER</span>
             <h3 className="modal-title">Discover Your Handloom Match</h3>
           </div>
           <button className="modal-close" onClick={onClose} aria-label="Close quiz">

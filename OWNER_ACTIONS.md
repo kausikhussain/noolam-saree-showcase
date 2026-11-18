@@ -1,4 +1,4 @@
-# NOOLAM · Owner Actions & Governance Ledger
+# SUTRÉA · Owner Actions & Governance Ledger
 **Document Version:** 1.0.0  
 **Status:** Living Document · Continuously Updated  
 **Confidentiality:** Internal Development Team & Brand Owner  
@@ -7,7 +7,7 @@
 
 ## 1. Classification Framework
 
-Every task across the NOOLAM e-commerce initiative is classified under one of four operational tiers:
+Every task across the SUTRÉA e-commerce initiative is classified under one of four operational tiers:
 
 - **[A] REQUIRED FROM OWNER**: Tasks requiring the business owner's proprietary data, legal identity, or authorized credentials.
 - **[B] ENGINEERED BY AGENT**: Technical development, architectural design, coding, testing, and deployment preparation executed autonomously by the engineering team.
@@ -25,11 +25,11 @@ Every task across the NOOLAM e-commerce initiative is classified under one of fo
 | **OA-01** | **Shopify Store Domain & Storefront API Token** | Connect Next.js to live Shopify product inventory (`.env.local` as `NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN` and `NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN`) | Shopify Admin → Settings → Apps and sales channels → Develop apps → Create Headless app | String tokens | **High** | **YES** |
 | **OA-02** | **Shopify Admin API Access Token & Webhook Secret** | Secure server-side inventory operations & HMAC webhook verification (`.env.local` as `SHOPIFY_ADMIN_ACCESS_TOKEN` and `SHOPIFY_WEBHOOK_SECRET`) | Shopify Headless App Configuration → Admin API Access Scopes (`read_products`, `read_orders`, `write_orders`) | Secret string | **High** | **YES** |
 | **OA-03** | **Official Master Brand Logo** | Replace procedural logo with registered brand mark in Navbar, Footer, and Invoices | Brand Designer / Creative Agency | Vector SVG (`public/brand/logo.svg`) | Medium | No (clean fallback active) |
-| **OA-04** | **Master Product Inventory & Price Sheet** | Populate official Shopify product catalogue with authentic SKUs, weave specs, and INR pricing | Master Loom Inventory Register / Weavers Guild | CSV / Excel (`docs/catalog/noolam_master_catalog.csv`) | **High** | **YES** |
+| **OA-04** | **Master Product Inventory & Price Sheet** | Populate official Shopify product catalogue with authentic SKUs, weave specs, and INR pricing | Master Loom Inventory Register / Weavers Guild | CSV / Excel (`docs/catalog/sutrea_master_catalog.csv`) | **High** | **YES** |
 | **OA-05** | **Merchant Payment Gateway Credentials** | Enable live UPI, RuPay, Visa, Mastercard, and NetBanking processing (Razorpay / Cashfree) | Razorpay Dashboard → Settings → API Keys | `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET` | **High** | **YES** |
 | **OA-06** | **Domestic Shipping Carrier API Token** | Automate real-time pincode serviceability and AWB generation (Shiprocket / Delhivery) | Shiprocket Panel → API → Configure Integration | `SHIPROCKET_EMAIL`, `SHIPROCKET_PASSWORD` | Medium | No (static pincode table active) |
 | **OA-07** | **Verified Business Details & GSTIN** | Legal tax invoices, statutory footer disclosures, and merchant compliance | GST Registration Certificate & Business PAN | Text / JSON (`lib/legal/business_details.json`) | Medium | **YES** |
-| **OA-08** | **Production Domain DNS Access** | Point custom domain (e.g. `noolam.com`) to Vercel production edge | Domain Registrar (GoDaddy, Namecheap, Cloudflare) | CNAME / A Records | Low | No (Vercel preview active) |
+| **OA-08** | **Production Domain DNS Access** | Point custom domain (e.g. `sutrea.com`) to Vercel production edge | Domain Registrar (GoDaddy, Namecheap, Cloudflare) | CNAME / A Records | Low | No (Vercel preview active) |
 
 > [!CAUTION]
 > **Credential Security Notice:**  
@@ -60,7 +60,7 @@ Every task across the NOOLAM e-commerce initiative is classified under one of fo
 
 | ID | Decision / Item | Description | Impact | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **AP-01** | **Commercial Pricing Strategy** | Approve base catalog pricing, look bundle discounts (10%), and festive promotional codes (`NOOLAM10`, `UTSAV`). | Margin & Revenue | Staged in `lib/data.ts` |
+| **AP-01** | **Commercial Pricing Strategy** | Approve base catalog pricing, look bundle discounts (10%), and festive promotional codes (`SUTREA10`, `UTSAV`). | Margin & Revenue | Staged in `lib/data.ts` |
 | **AP-02** | **Blouse Customization Policy** | Confirm whether stitched blouse customizations are final sale or eligible for exchange. | Operations & Tailoring | Drafted in Policies |
 | **AP-03** | **COD (Cash on Delivery) Threshold** | Set maximum allowable order value for Cash on Delivery (suggested max: ₹50,000). | Fraud & Return Risk | Configured in Checkout |
 | **AP-04** | **Legal Policies Sign-Off** | Formal review of Return/Refund/Shipping policies by qualified legal counsel. | Statutory Compliance | Structured in `app/policies/` |

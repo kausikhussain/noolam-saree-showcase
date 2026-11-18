@@ -1,8 +1,8 @@
-# NOOLAM — Rebuild Plan
+# SUTRÉA — Master Architecture Plan
 
 Sources analysed
-- `../WhatsApp Video 2026-11-08 at 12.57.21 AM.mp4` (46 s screen recording, frames extracted at 1 fps)
-- `../noolam-saree-showcase/` (reference repo: PROMPTS.md, HOW-WE-MADE.md, 10 screenshots — **no source code**)
+- Reference showcase & design system
+- `../sutrea-luxury-commerce/` (reference repo: PROMPTS.md, HOW-WE-MADE.md, 10 screenshots)
 
 ## How the original was built (reconstructed)
 Next.js (App Router) single page, built section-by-section with Claude Code from one prompt per
@@ -26,7 +26,7 @@ ticker with gold caps along the bottom of the viewport.
 | 8 | The Muse Reels "Silk, in motion." | — | 3D curved arc of reel cards, autoplay progress, prev/pause/next, full-screen viewer |
 | 9 | The Bridal Collection | bridal | arch-top cards on a curve, centre gold border, discount tags |
 | 10 | Three silks, one weave. (video only) | weave | three.js ribbons flowing → braid on scroll; pick silks to braid, live price |
-| 11 | Footer "Woven with heritage. Draped for today." (video only) | — | maroon footer, NOOLAM wordmark |
+| 11 | Footer "Woven with heritage. Draped for today." (video only) | — | maroon footer, SUTRÉA wordmark |
 
 ## Tech
 - Next.js 15 + React 19 + TypeScript, plain CSS (`app/globals.css`), `three` for the weave.

@@ -73,8 +73,8 @@ export default function Intro() {
       )}
       <div className="intro-logo">
         <Lotus size={44} />
-        <span>NOOLAM</span>
-        <small>KANCHIPURAM SILK</small>
+        <span>SUTRÉA</span>
+        <small>HERITAGE SILK</small>
       </div>
     </div>
   );

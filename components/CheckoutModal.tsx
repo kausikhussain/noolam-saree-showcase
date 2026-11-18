@@ -37,7 +37,7 @@ export default function CheckoutModal() {
     e.preventDefault();
     setIsProcessing(true);
     setTimeout(() => {
-      const generatedId = `NLM-${Math.floor(100000 + Math.random() * 900000)}`;
+      const generatedId = `STR-${Math.floor(100000 + Math.random() * 900000)}`;
       setOrderId(generatedId);
       setIsProcessing(false);
       setStep("confirmed");
@@ -51,7 +51,7 @@ export default function CheckoutModal() {
         {/* Header */}
         <div className="modal-header">
           <div className="modal-title-group">
-            <span className="eyebrow">NOOLAM · PRIVATE CHECKOUT</span>
+            <span className="eyebrow">SUTRÉA · PRIVATE CHECKOUT</span>
             <h3 className="modal-title">
               {step === "details" && "Delivery & Contact Information"}
               {step === "payment" && "Select Secure Payment"}
@@ -266,7 +266,7 @@ export default function CheckoutModal() {
               Order Reference: <strong>#{orderId}</strong>
             </p>
             <p className="order-note">
-              Your heirloom Kanchipuram silk order has been reserved on our Master Loom register.
+              Your heritage silk order has been reserved on our Master Loom register.
               An official dispatch confirmation with tracking details and Silk Mark certificate has been dispatched to <strong>{formData.email}</strong>.
             </p>
 
@@ -289,7 +289,7 @@ export default function CheckoutModal() {
 
             <div className="confirmed-actions">
               <a
-                href={`https://wa.me/?text=Hello%20NOOLAM,%20I%20have%20placed%20order%20%23${orderId}.%20Please%20share%20weaving%20updates.`}
+                href={`https://wa.me/?text=Hello%20SUTRÉA,%20I%20have%20placed%20order%20%23${orderId}.%20Please%20share%20weaving%20updates.`}
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-maroon"

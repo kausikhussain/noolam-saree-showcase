@@ -77,13 +77,13 @@ export function BagProvider({ children }: { children: React.ReactNode }) {
   // Hydrate from localStorage on client
   useEffect(() => {
     try {
-      const savedItems = localStorage.getItem("noolam_cart");
+      const savedItems = localStorage.getItem("sutrea_cart");
       if (savedItems) setItems(JSON.parse(savedItems));
 
-      const savedLikes = localStorage.getItem("noolam_likes");
+      const savedLikes = localStorage.getItem("sutrea_likes");
       if (savedLikes) setLiked(new Set(JSON.parse(savedLikes)));
 
-      const savedCurr = localStorage.getItem("noolam_currency") as Currency | null;
+      const savedCurr = localStorage.getItem("sutrea_currency") as Currency | null;
       if (savedCurr && CURRENCY_CONFIG[savedCurr]) setCurrencyState(savedCurr);
     } catch {}
   }, []);
@@ -91,20 +91,20 @@ export function BagProvider({ children }: { children: React.ReactNode }) {
   // Sync to localStorage
   useEffect(() => {
     try {
-      localStorage.setItem("noolam_cart", JSON.stringify(items));
+      localStorage.setItem("sutrea_cart", JSON.stringify(items));
     } catch {}
   }, [items]);
 
   useEffect(() => {
     try {
-      localStorage.setItem("noolam_likes", JSON.stringify(Array.from(liked)));
+      localStorage.setItem("sutrea_likes", JSON.stringify(Array.from(liked)));
     } catch {}
   }, [liked]);
 
   const setCurrency = useCallback((c: Currency) => {
     setCurrencyState(c);
     try {
-      localStorage.setItem("noolam_currency", c);
+      localStorage.setItem("sutrea_currency", c);
     } catch {}
   }, []);
 
@@ -179,8 +179,8 @@ export function BagProvider({ children }: { children: React.ReactNode }) {
 
   const applyPromo = useCallback((code: string) => {
     const clean = code.trim().toUpperCase();
-    if (clean === "NOOLAM10") {
-      setPromoCode("NOOLAM10");
+    if (clean === "SUTREA10") {
+      setPromoCode("SUTREA10");
       setPromoError(null);
       return true;
     } else if (clean === "UTSAV") {
@@ -211,7 +211,7 @@ export function BagProvider({ children }: { children: React.ReactNode }) {
   const subtotal = items.reduce((acc, item) => acc + item.price * item.qty, 0);
 
   let discount = 0;
-  if (promoCode === "NOOLAM10") {
+  if (promoCode === "SUTREA10") {
     discount = Math.round(subtotal * 0.1);
   } else if (promoCode === "UTSAV") {
     discount = subtotal >= 25000 ? 2000 : 0;

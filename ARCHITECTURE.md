@@ -1,10 +1,10 @@
-# NOOLAM · Architecture & Technical Specifications
+# SUTRÉA · Architecture & Technical Specifications
 
 ---
 
 ## 1. System Topology
 
-NOOLAM is engineered as a **Headless Luxury Commerce Platform** combining a Next.js 15 App Router storefront on the Vercel Edge with Shopify Cloud serving as the single source of truth for commerce operations.
+SUTRÉA is engineered as a **Headless Luxury Commerce Platform** combining a Next.js 15 App Router storefront on the Vercel Edge with Shopify Cloud serving as the single source of truth for commerce operations.
 
 ```text
 Patron Browser (Mobile / Desktop)

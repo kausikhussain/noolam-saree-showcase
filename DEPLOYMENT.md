@@ -1,14 +1,14 @@
-# NOOLAM · Production Deployment Guide (Vercel)
+# SUTRÉA · Production Deployment Guide (Vercel)
 
 ---
 
 ## 1. Vercel Staged Deployment Protocol
 
-NOOLAM is pre-configured for automated deployment on **Vercel Pro**:
+SUTRÉA is pre-configured for automated deployment on **Vercel Pro**:
 
 ### Step 1: Connect GitHub Repository
 1. Log in to [Vercel Dashboard](https://vercel.com).
-2. Click **Add New Project** and select `kausikhussain/noolam-saree-showcase`.
+2. Click **Add New Project** and select `kausikhussain/sutrea-luxury-commerce`.
 3. Select **Next.js** framework preset.
 
 ### Step 2: Configure Environment Variables
@@ -20,7 +20,7 @@ Add the following in Vercel **Project Settings → Environment Variables**:
 | `NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN` | Production & Preview | Storefront Access Token |
 | `NEXT_PUBLIC_SHOPIFY_API_VERSION` | Production & Preview | `2026-10` |
 | `SHOPIFY_WEBHOOK_SECRET` | Production & Preview | Shopify Webhook HMAC Secret |
-| `NEXT_PUBLIC_SITE_URL` | Production | `https://noolam.com` |
+| `NEXT_PUBLIC_SITE_URL` | Production | `https://sutrea.com` |
 
 ### Step 3: Production Domain DNS
 Add the custom domain in Vercel:

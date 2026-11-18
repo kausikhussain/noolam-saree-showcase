@@ -41,7 +41,7 @@ export default function ProductDetailModal({ isOpen, onClose, product }: SareeDe
       <div className="modal-container pdp-modal" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <div className="modal-title-group">
-            <span className="eyebrow">NOOLAM · HEIRLOOM SPECIFICATION</span>
+            <span className="eyebrow">SUTRÉA · HEIRLOOM SPECIFICATION</span>
             <h3 className="modal-title">{product.title}</h3>
           </div>
           <button className="modal-close" onClick={onClose} aria-label="Close modal">

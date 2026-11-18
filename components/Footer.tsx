@@ -14,26 +14,40 @@ export default function Footer() {
         </h2>
         <div className="footer-mark">
           <Lotus size={40} />
-          <span>NOOLAM</span>
+          <span>SUTRÉA</span>
         </div>
       </div>
       <div className="footer-grid" data-reveal>
         <div>
-          <h5>Shop</h5>
-          <a href="#look">Try the Look</a>
-          <a href="#silk">Pick a Silk</a>
-          <a href="#rack">The Rack</a>
-          <a href="#bridal">Bridal</a>
+          <h5>Boutique</h5>
+          <a href="/shop">Complete Collection</a>
+          <a href="/#look">Try the Look</a>
+          <a href="/#silk">Pick a Silk</a>
+          <a href="/#rack">The Rail</a>
+          <a href="/#bridal">Bridal Trousseau</a>
         </div>
         <div>
-          <h5>Visit the store</h5>
+          <h5>The House</h5>
+          <a href="/about">Our Story</a>
+          <a href="/craftsmanship">The Craftsmanship</a>
+          <a href="/care">Heirloom Care Guide</a>
+          <a href="/faq">Frequently Asked</a>
+          <a href="/policies/authenticity">Silk Mark Guarantee</a>
+        </div>
+        <div>
+          <h5>Heritage Flagship</h5>
           <p>
-            14 Gandhi Road
+            SUTRÉA Flagship
             <br />
-            Kanchipuram, Tamil Nadu 631501
+            42 Gandhi Road, Near Temple Outer Gate
             <br />
-            Open daily · 10am – 9pm
+            Kanchipuram, Tamil Nadu 631502
+            <br />
+            Open daily · 10am – 9pm IST
           </p>
+          <a href="/policies/contact" style={{ display: "inline-block", marginTop: "8px", color: "var(--gold)" }}>
+            Concierge &amp; Showroom Visits →
+          </a>
         </div>
         <div>
           <h5>Care &amp; Heritage</h5>
@@ -63,7 +77,7 @@ export default function Footer() {
         </form>
       </div>
       <div className="footer-base">
-        <span>© {new Date().getFullYear()} NOOLAM · Kanchipuram Silk. A demo brand.</span>
+        <span>© {new Date().getFullYear()} SUTRÉA · Heritage Silk. A demo brand.</span>
         <span>Handwoven in Kanchipuram</span>
       </div>
     </footer>

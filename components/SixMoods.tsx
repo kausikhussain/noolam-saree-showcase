@@ -15,7 +15,7 @@ export default function SixMoods() {
       </svg>
       <div className="section-head split" data-reveal>
         <div>
-          <span className="eyebrow">The NOOLAM Archive</span>
+          <span className="eyebrow">The SUTRÉA Archive</span>
           <h2>
             Six Moods. <span className="grad-text">Timeless Drapes</span>
           </h2>

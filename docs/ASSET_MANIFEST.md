@@ -1,4 +1,4 @@
-# NOOLAM · Master Visual Asset Manifest & Creative Production Pipeline
+# SUTRÉA · Master Visual Asset Manifest & Creative Production Pipeline
 **Document Version:** 1.0.0  
 **Creative Direction:** Heritage Luxury Kanchipuram Silk Showroom & Contemporary Editorial  
 **Total Catalogued Asset Slots:** 68 slots  
@@ -8,7 +8,7 @@
 ## 1. Important Product Authenticity & Creative Rules
 
 > [!IMPORTANT]
-> **The NOOLAM Authenticity Mandate:**
+> **The SUTRÉA Authenticity Mandate:**
 > 1. **Conceptual vs. Purchasable Distinction:** AI-generated imagery is strictly reserved for atmospheric brand campaigns, editorial mood storytelling ("Six Moods", "The Muse Film", and "The Muse Reels"), and showroom perspective visuals.
 > 2. **SKU & Physical Product Integrity:** When a customer purchases a specific saree (e.g., *Mayilkan Violet with Korvai Border*), the product card and listing MUST represent the actual physical handloom piece. Never invent zari patterns, gold/silver composition, thread counts, or Silk Mark numbers.
 > 3. **Procedural SVG Stand-ins:** If an AI asset or photoshoot asset is not yet available in `public/images/`, the system renders dynamic procedural SVG artwork in the exact palette and weave pattern of that saree. Broken image icons and empty layout shifts are strictly prevented.

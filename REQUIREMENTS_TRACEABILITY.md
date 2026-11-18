@@ -1,4 +1,4 @@
-# NOOLAM · Requirements Traceability Matrix (RTM)
+# SUTRÉA · Requirements Traceability Matrix (RTM)
 **Document Version:** 1.0.0  
 **Scope:** Master Execution Architecture & Business Requirements  
 **Verification Method:** Static Type-Checking, Unit Verification, Runtime Interaction Audit, and Build Validation  
@@ -16,7 +16,7 @@
 | **BR-05** | **Product Catalogue & Metafield Modeling** | `lib/data.ts`, `types/product.ts`, `docs/catalog/sample_products.json` | Type-safety verification for Zari type, weave technique, weight, Silk Mark certification | **Verified** |
 | **BR-06** | **INR-First Pricing & International Formatter** | `lib/currency.ts`, `components/CurrencySelector.tsx`, `components/store.tsx` | Unit verification for Indian number formatting (`₹1,25,000`), currency conversion calculations | **Verified** |
 | **BR-07** | **Interactive Shopping Bag Drawer** | `components/CartDrawer.tsx`, `components/store.tsx` | LocalStorage hydration, quantity stepper, item removal, free delivery meter calculation | **Verified** |
-| **BR-08** | **Promotional Voucher & Bundle Engine** | `components/store.tsx`, `components/CartDrawer.tsx` | Validation logic for `NOOLAM10` (-10%) and `UTSAV` (-₹2,000 above ₹25,000), error handling | **Verified** |
+| **BR-08** | **Promotional Voucher & Bundle Engine** | `components/store.tsx`, `components/CartDrawer.tsx` | Validation logic for `SUTREA10` (-10%) and `UTSAV` (-₹2,000 above ₹25,000), error handling | **Verified** |
 | **BR-09** | **Domestic Pincode Delivery Estimator** | `lib/shipping/pincode.ts`, `components/CartDrawer.tsx` | 6-digit Indian PIN regex validation, serviceability response test (`600001`, `560001`, `110001`) | **Verified** |
 | **BR-10** | **Private Luxury 3-Step Checkout Flow** | `components/CheckoutModal.tsx` | Form validation, payment method selector (UPI/Card/COD), automated order receipt generation | **Verified** |
 | **BR-11** | **Saved Heirlooms Wishlist Management** | `components/WishlistDrawer.tsx`, `components/store.tsx` | Heart toggle persistence in LocalStorage, cross-catalog resolution, one-click add to cart | **Verified** |

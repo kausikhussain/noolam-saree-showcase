@@ -1,4 +1,4 @@
-# NOOLAM · Security Architecture & Verification Protocols
+# SUTRÉA · Security Architecture & Verification Protocols
 
 ---
 
@@ -20,5 +20,5 @@ To prevent forged order confirmations or replay attacks:
 
 ## 3. PCI-DSS Compliance & Card Data Handling
 
-NOOLAM does not touch, transmit, or store credit card numbers, CVVs, or bank login credentials. Payment collection is delegated entirely to certified PCI-DSS Level 1 compliant gateway handoffs (Shopify Checkout / Razorpay / Cashfree).
+SUTRÉA does not touch, transmit, or store credit card numbers, CVVs, or bank login credentials. Payment collection is delegated entirely to certified PCI-DSS Level 1 compliant gateway handoffs (Shopify Checkout / Razorpay / Cashfree).
 

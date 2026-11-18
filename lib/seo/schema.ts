@@ -6,11 +6,11 @@ export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "NOOLAM",
-    "legalName": "NOOLAM Kanchipuram Silks Private Limited",
-    "url": "https://noolam.com",
-    "logo": "https://noolam.com/brand/logo.png",
-    "description": "Artisan handwoven Kanchipuram silk sarees crafted on traditional pit looms with certified pure gold and silver zari.",
+    "name": "SUTRÉA",
+    "legalName": "SUTRÉA Luxury Silks Private Limited",
+    "url": "https://sutrea.com",
+    "logo": "https://sutrea.com/brand/logo.png",
+    "description": "Artisan handwoven heritage silk sarees crafted on traditional pit looms with certified pure gold and silver zari.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "42 Gandhi Road, Near Ekambareswarar Temple Outer Gate",
@@ -41,12 +41,12 @@ export function generateProductSchema(product: {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": product.title,
-    "image": product.imageUrl ? [`https://noolam.com${product.imageUrl}`] : ["https://noolam.com/images/hero-showroom.jpg"],
+    "image": product.imageUrl ? [`https://sutrea.com${product.imageUrl}`] : ["https://sutrea.com/images/hero-showroom.jpg"],
     "description": product.description,
     "sku": product.sku,
     "brand": {
       "@type": "Brand",
-      "name": "NOOLAM",
+      "name": "SUTRÉA",
     },
     "material": "100% Pure Natural Mulberry Silk",
     "countryOfOrigin": {
@@ -55,7 +55,7 @@ export function generateProductSchema(product: {
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://noolam.com/#silk`,
+      "url": `https://sutrea.com/#silk`,
       "priceCurrency": "INR",
       "price": product.price,
       "priceValidUntil": "2027-12-31",
@@ -63,7 +63,7 @@ export function generateProductSchema(product: {
       "availability": product.inStock !== false ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       "seller": {
         "@type": "Organization",
-        "name": "NOOLAM",
+        "name": "SUTRÉA",
       },
       "shippingDetails": {
         "@type": "OfferShippingDetails",

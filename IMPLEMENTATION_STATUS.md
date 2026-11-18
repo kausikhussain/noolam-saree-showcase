@@ -1,4 +1,4 @@
-# NOOLAM · Implementation Status & Milestone Tracker
+# SUTRÉA · Implementation Status & Milestone Tracker
 **Document Version:** 1.0.0  
 **Last Updated:** November 8, 2026  
 **Platform Status:** Operational Staging & Architecture Hardening  

@@ -1,14 +1,14 @@
-# NOOLAM · Complete Project & Repository Audit (Phase Zero)
+# SUTRÉA · Complete Project & Repository Audit (Phase Zero)
 **Document Version:** 1.0.0  
 **Audit Date:** November 8, 2026  
 **Auditor:** Senior E-Commerce Architecture & Engineering Team  
-**Repository:** `kausikhussain/noolam-saree-showcase` (`main` branch)
+**Repository:** `kausikhussain/sutrea-luxury-commerce` (`main` branch)
 
 ---
 
 ## 1. Executive Summary
 
-This audit assesses the technical health, architectural completeness, and production readiness of the **NOOLAM** Kanchipuram Silk Saree website. The project combines a modern **Next.js 15 (App Router)** and **React 19** frontend with an interactive **Three.js** Verlet cloth physics simulation and procedural silk shaders. 
+This audit assesses the technical health, architectural completeness, and production readiness of the **SUTRÉA** Heritage Silk Saree website. The project combines a modern **Next.js 15 (App Router)** and **React 19** frontend with an interactive **Three.js** Verlet cloth physics simulation and procedural silk shaders. 
 
 While the aesthetic and spatial motion foundations are exceptionally strong, transforming this application into a live, high-volume luxury e-commerce platform requires replacing local in-memory mock states with a robust **Shopify Headless Commerce** layer, real product catalogue synchronization, genuine payment and logistics workflows, customer account management, and rigorous legal/SEO/performance optimizations.
 
@@ -34,7 +34,7 @@ While the aesthetic and spatial motion foundations are exceptionally strong, tra
 
 ### 3.1 Directory Structure & File Map
 ```text
-noolam-saree-showcase/
+sutrea-luxury-commerce/
 ├── app/
 │   ├── globals.css              # Core design tokens, typography, layout, modals, drawers, animations
 │   ├── layout.tsx               # Root layout, Google Fonts injection, OpenGraph meta
