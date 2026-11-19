@@ -149,3 +149,86 @@ export const weaveSilks: { name: string; base: string; zari: string; price: numb
   { name: "Mulberry", base: "#7b1f6a", zari: "#e0b04a", price: 20450 },
   { name: "Saffron", base: "#ef6c00", zari: "#ffe08a", price: 17950 },
 ];
+
+/* ---------------- Product & Collection Resolvers ---------------- */
+export type CatalogProduct = {
+  handle: string;
+  name: string;
+  price: number;
+  category: string;
+  colors: Colors;
+  pattern: Pattern;
+  description: string;
+  zari: string;
+  fabric: string;
+  origin: string;
+};
+
+export function getAllProducts(): CatalogProduct[] {
+  const rackProducts: CatalogProduct[] = rack.map((item) => ({
+    handle: item.name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+    name: item.name,
+    price: item.price,
+    category: item.cat === "silk" ? "Pure Silk Saree" : item.cat === "half" ? "Half Saree" : "Handloom Blouse",
+    colors: item.colors,
+    pattern: item.pattern,
+    description: `Handcrafted ${item.name} handwoven on traditional pit looms in Kanchipuram. Featuring authentic 3-ply high-twist natural mulberry silk with heirloom metallic zari borders and traditional motifs.`,
+    zari: item.tags.includes("zari") ? "Pure Silver-Core Gold Zari (0.5% 24K Gold)" : "Tested Half-Fine Zari",
+    fabric: "100% Natural Mulberry Silk (Silk Mark India Certified)",
+    origin: "Kanchipuram, Tamil Nadu, India",
+  }));
+
+  const silkCardProducts: CatalogProduct[] = silkCards.map((card) => ({
+    handle: card.title.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+    name: `SutréA ${card.title} Silk`,
+    price: card.price,
+    category: "Heritage Silk Saree",
+    colors: card.colors,
+    pattern: card.pattern,
+    description: `The signature SutréA ${card.title} silk drape. Exemplifying traditional temple border artistry, hand-interlocked using the rare Korvai weaving technique.`,
+    zari: "Authentic Heirloom Zari",
+    fabric: "Grade-A Natural Mulberry Silk",
+    origin: "Kanchipuram, Tamil Nadu, India",
+  }));
+
+  return [...rackProducts, ...silkCardProducts];
+}
+
+export function getProductByHandle(handle: string): CatalogProduct | undefined {
+  return getAllProducts().find((p) => p.handle === handle);
+}
+
+export const collectionsData = [
+  {
+    handle: "bridal-elan",
+    title: "Bridal Élan Archive",
+    tagline: "Woven for the Muhurtham that defines eternity.",
+    description: "Our bridal collection pairs centuries-old Kanchipuram pit-loom discipline with precious silver-core 24K gold zari. Each piece requires up to 300 hours of synchronized hand-weaving by master artisans.",
+    heroColor: "#7A2E3B",
+  },
+  {
+    handle: "kanchipuram-icons",
+    title: "Kanchipuram Icons",
+    tagline: "Timeless motifs passed down across generations.",
+    description: "From the sacred Rudraksha and Mayil (peacock) borders to regal temple gopuram checks, this edit celebrates the unalterable architectural language of South Indian handloom.",
+    heroColor: "#2C4535",
+  },
+  {
+    handle: "zari-signatures",
+    title: "Zari Signatures Edit",
+    tagline: "Metallurgical mastery in pure silver and 24-karat gold.",
+    description: "Every weft of zari in this collection possesses real precious metal value, developing a soft antique luster that matures gracefully with each generation of guardianship.",
+    heroColor: "#B58A3E",
+  },
+  {
+    handle: "festive-radiance",
+    title: "Festive Radiance Weaves",
+    tagline: "Vibrant hues and celebratory lightness.",
+    description: "Designed for joyous occasions, combining shot-silk contrast pallus with delicate brocade buttas for effortless drape and all-day comfort.",
+    heroColor: "#B85522",
+  },
+];
+
+export function getCollectionByHandle(handle: string) {
+  return collectionsData.find((c) => c.handle === handle);
+}

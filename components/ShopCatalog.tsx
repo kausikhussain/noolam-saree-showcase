@@ -3,6 +3,7 @@ import { useState } from "react";
 import { rack, rackFilters, type RackItem } from "@/lib/data";
 import { useBag } from "@/components/store";
 import { Bag, Heart, ArrowR, Sparkles } from "@/components/Icons";
+import Link from "next/link";
 
 export default function ShopCatalog() {
   const { add, formatPrice, liked, toggleLike, openCart } = useBag();
@@ -77,7 +78,7 @@ export default function ShopCatalog() {
 
           return (
             <div key={item.name} className="catalog-card">
-              <div className="catalog-card-visual" style={{ background: item.colors[0] }}>
+              <Link href={`/product/${itemId}`} className="catalog-card-visual" style={{ background: item.colors[0] }}>
                 <div
                   className="catalog-card-accent"
                   style={{
@@ -89,18 +90,25 @@ export default function ShopCatalog() {
                   {item.cat === "silk" ? "Pure Silk" : item.cat === "half" ? "Half Saree" : "Handloom Blouse"}
                 </span>
                 <button
-                  onClick={() => toggleLike(itemId)}
+                  type="button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggleLike(itemId);
+                  }}
                   className={`catalog-card-heart ${isLiked ? "liked" : ""}`}
                   aria-label="Save to wishlist"
                 >
                   <Heart size={16} />
                 </button>
                 <div className="catalog-card-pattern">{item.pattern.toUpperCase()} WEAVE</div>
-              </div>
+              </Link>
 
               <div className="catalog-card-details">
                 <span className="catalog-card-cat">SUTRÉA HEIRLOOM</span>
-                <h3 className="catalog-card-title">{item.name}</h3>
+                <Link href={`/product/${itemId}`}>
+                  <h3 className="catalog-card-title">{item.name}</h3>
+                </Link>
                 <div className="catalog-card-price-row">
                   <span className="catalog-card-price">{formatPrice(item.price)}</span>
                   <button
@@ -128,3 +136,4 @@ export default function ShopCatalog() {
     </div>
   );
 }
+
