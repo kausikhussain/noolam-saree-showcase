@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Frictionless local launcher for SUTRÉA Next.js development server on Windows.
 #>

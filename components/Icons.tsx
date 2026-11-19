@@ -49,6 +49,12 @@ export const Plus = ({ size, className }: P) => (
     <path d="M12 5v14M5 12h14" />
   </svg>
 );
+export const User = ({ size, className }: P) => (
+  <svg {...s(size)} className={className}>
+    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+    <circle cx="12" cy="7" r="4" />
+  </svg>
+);
 export const Close = ({ size, className }: P) => (
   <svg {...s(size)} className={className}>
     <path d="M6 6l12 12M18 6 6 18" />

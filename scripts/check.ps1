@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Automated health and build validation script for SUTRÉA Flagship.
 #>

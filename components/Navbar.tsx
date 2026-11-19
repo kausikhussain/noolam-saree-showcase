@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useBag } from "./store";
-import { ArrowR, Bag, Heart, Lotus } from "./Icons";
+import { ArrowR, Bag, Heart, Lotus, User } from "./Icons";
 
 const links = [
   ["/", "Home"],
@@ -64,6 +64,14 @@ export default function Navbar() {
         ))}
       </nav>
       <div className="nav-right">
+        <a
+          href="/account"
+          className="nav-icon"
+          aria-label="Patron Account"
+          title="Patron Profile & Orders"
+        >
+          <User size={16} />
+        </a>
         <button
           className="nav-icon"
           onClick={openWishlist}

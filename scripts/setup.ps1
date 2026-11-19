@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Automated environment setup script for SUTRÉA Heritage Silk Flagship.
 .DESCRIPTION
